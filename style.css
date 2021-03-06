@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&display=swap');
 
-/**css variable**/
+/*****css variable*****/
 :root{
     --primary-color:#EC4899;
     --dark-grey:#6B7280;
-    --off-white:#F3F4F6;
+    --off-white:#FAFAFA; 
+    /* --off-white:#FAFAFA; */
 }
 body{
     font-family: 'Abhaya Libre', serif;
@@ -20,7 +21,7 @@ span{
     color: var(--primary-color);
 }
 
-/* header */
+/************ header ***********/
 .hero{
     padding: 5rem;
     background-color: #FDF2F8;
@@ -46,16 +47,17 @@ span{
     color: #BE185D;
 }
 
-/**container**/
+/*************container***********/
 .container{
     padding: 0 1rem;
+    margin: auto;
 }
 .container h1{
     font-size: 2rem;
     text-align: center;
 }
 .container-center{
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -64,7 +66,7 @@ span{
     text-align: center;
 }
 
-/* technologies */
+/************* technologies **********/
 .flex{
     display: flex;
     flex-wrap: wrap;
@@ -82,6 +84,69 @@ span{
     text-align: center;
     text-decoration: none;
     color: var(--dark-grey);
+}
+
+/*********** projects **************/
+.proj-card{
+    display: block;
+    margin-top: 2rem !important;
+    width: 650px;
+    height: 450px;
+    border: 1px solid gray;
+    padding: 1rem ;
+    justify-content: center;
+}
+
+.flex .proj-card{
+    margin: 10px;
+  padding: 20px; 
+}
+/* mini projects */
+* {
+    box-sizing: border-box;
+  }
+.mini-proj p{
+    text-align: left;
+    font-size: 18px;
+}
+/* Float four columns side by side */
+.column {
+    float: left;
+    /* width: 50%; */
+    padding: 0 10px;
+    
+}
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 0 -5px;
+    padding: 3rem 0;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    max-height: 450px !important;
+    /* text-align: center; */
+    /* background-color: #f1f1f1; */
+    margin-top: 2rem;
+}
+.card p{
+    text-align: justify;
+    font-size: 1.2rem;
+}
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
 }
 
 hr{
@@ -123,10 +188,11 @@ hr{
 }
 .navigation .nav-pills{
     text-align: right;
+    font-size: 1.2rem;
 }
 .navigation .nav-brand{
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 .navigation .link{
     color: white;
