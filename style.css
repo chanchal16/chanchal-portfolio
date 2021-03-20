@@ -1,15 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+
+*,::before,::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 
 /*****css variable*****/
 :root{
     --primary-color:#EC4899;
-    --dark-grey:#6B7280;
+    --dark-grey:#616875;
     --off-white:#FAFAFA; 
     /* --off-white:#FAFAFA; */
 }
 body{
-    font-family: 'Abhaya Libre', serif;
+    font-family: 'Crimson Text', serif; 
     margin: 0px;
 }
 
@@ -19,6 +28,29 @@ span{
 
 #lib-header{
     color: var(--primary-color);
+}
+
+/* navigation */
+.navigation{
+    background-color: var(--primary-color);
+    font-family: 'Akaya Telivigala', cursive;
+    color: white;
+    padding: 1.5rem;
+    border-bottom-left-radius: 1rem;
+}
+.navigation .nav-pills{
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+.navigation .link{
+    color: white;
+    /*float: right;*/
+}
+.navigation .link-active{
+    font-weight: bold  ;
+    border-bottom: 3px solid white;
+    border-width: 10%;
 }
 
 /************ header ***********/
@@ -57,7 +89,7 @@ span{
     text-align: center;
 }
 .container-center{
-    max-width: 800px;
+    /* max-width: 950px; */
     margin: auto;
 }
 
@@ -87,58 +119,60 @@ span{
 }
 
 /*********** projects **************/
-.proj-card{
-    display: block;
-    margin-top: 2rem !important;
-    width: 650px;
-    height: 450px;
-    border: 1px solid gray;
-    padding: 1rem ;
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
-.flex .proj-card{
-    margin: 10px;
-  padding: 20px; 
-}
-/* mini projects */
-* {
-    box-sizing: border-box;
-  }
-.mini-proj p{
-    text-align: left;
-    font-size: 18px;
-}
-/* Float four columns side by side */
-.column {
-    float: left;
-    /* width: 50%; */
-    padding: 0 10px;
-    
-}
-/* Remove extra left and right margins, due to padding in columns */
-.row {
-    margin: 0 -5px;
-    padding: 3rem 0;
-}
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 /* Style the counter cards */
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    padding: 16px;
-    max-height: 450px !important;
-    /* text-align: center; */
-    /* background-color: #f1f1f1; */
-    margin-top: 2rem;
-}
-.card p{
+    
+    max-width: 400px;
+    position: relative;
+    padding: 0px 15px;
+    height: 230px !important; 
+    border: 1px solid gray;
+    margin: 1rem;
     text-align: justify;
-    font-size: 1.2rem;
+    overflow: hidden;
+
+}
+
+.card:hover{
+    border: 1.3px solid var(--primary-color);
+}
+
+.proj-info{
+    flex-grow: 1;
+    margin-top: 10px;
+}
+
+.tags{
+    text-align: justify;
+    background-color: var(--off-white);
+    color: var(--primary-color);
+    margin-top: 8px;
+}
+
+.proj-info h2{
+    color: var(--dark-grey);
+}
+.proj-info p{
+    text-align: justify;
+    font-size: 18px;
+    padding-top: 20px;
+    
+}
+
+.btn{
+    position: absolute;
+    bottom: 0;
+    /* padding-top: 15px; */
+    margin-bottom: 18px;
 }
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
@@ -178,29 +212,7 @@ hr{
     padding: 0rem 0.5rem;
 }
 
-/* navigation */
-.navigation{
-    background-color: var(--primary-color);
-    font-family: 'Akaya Telivigala', cursive;
-    color: white;
-    padding: 1rem;
-    border-bottom-left-radius: 1rem;
-}
-.navigation .nav-pills{
-    text-align: right;
-    font-size: 1.2rem;
-}
-.navigation .nav-brand{
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-.navigation .link{
-    color: white;
-    /*float: right;*/
-}
-.navigation .link-active{
-    font-weight: bold  ;
-}
+
 
 
 
@@ -223,16 +235,26 @@ button{
 /* footer */
 .footer{
     background-color: var(--primary-color);
-    padding: 2rem 1rem;
-    text-align: center;
+    padding: 20px ;
+    font-family: 'Akaya Telivigala', cursive;
+    /* text-align: center; */
     color: white;
+    margin-top: 18px;
     border-top-right-radius: 1rem;
 }
 .footer .link{
     color: white;
+    /* font-size: 1rem; */
 }
 
-/* to make links in center do following */
-.footer ul{
-    padding-inline-start: 0px;
+.social-links{
+    text-align: right;
 }
+.fab{
+    font-size: 30px;
+}
+
+/* to make links in center do following 
+.footer ul
+    padding-inline-start: 0px;
+}*/
