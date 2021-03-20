@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href="/style.css" rel="stylesheet"/>
 </head>
 <body>
     <!-- navigation bar -->
-    <nav class="navigation container">
-        <div class="nav-brand">CHANCHAL</div>
+    <nav class="navigation">
+        
         <ul class="list-non-bullet nav-pills">
+            <li style="float: left; font-weight: bold;
+            font-size: 1.6rem;">
+                <a class="link" href="/">CHANCHAL</a>
+            </li>
+            
             <li class="list-item-inline link-active">
                 <a class="link" href="/">Home</a>
             </li>
@@ -30,8 +35,8 @@
     
 
     <!-- header -->
-    <header class="hero">
-        <img class="hero-img" src="/images/proud-coder.svg">
+    <header class="intro-header">
+        <img class="dev-img" src="/images/proud-coder.svg">
         <div class="intro-heading">
             <h2>Hey there!</h2>
             <h1>I am <span class="name-highlight">Chanchal Rajput</span></h1>
@@ -46,7 +51,7 @@
     <section class="section">
         <div class="container container-center">
             <h1>Technologies I Know</h1>
-            <p>Below are the languages/frameworks I've worked on..</p>
+            <p style="color: #6B7280;">Below are the languages/frameworks I've worked on..</p>
         </div>
         <div class="flex techlist ts">
             <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
@@ -82,99 +87,97 @@
         
     </section>
 
-    <!-- Projects -->
-    <section class="section ow">
-        <div class="container container-center">
-              
-            <div class="row">
-                <div class="column">
-                    <h2>Projects</h2>
-                    <p style="font-size: 20px; text-align: left;">Some of my featured projects &nbsp;
-                         <a class="link link-primary" href="/projects.html">see all</a></p>
-                    
-                  <div class="card">
-                    <h2>Technova</h2>
-                    
-                    <p>A responsive Corporate website made with HTML, CSS, Bootstrap, Javascript.
-                    Used jQuery library to enhance to perfomance and functionality.<br>
-                        It's deployed on Netlify.</p>
-                    <div class="btn">
-                        <a class="link link-primary" href="https://ctechnova.netlify.app/">Live Project</a>
-                        <a class="link link-secondary" href="https://github.com/chanchal16/Technova">Source code</a>  
+    <!----- Projects ------>
+    <section class="section ow" style="padding: 1rem;">
+        <div class="container container-center" >
+            <div class="proj">
+                <h2 style="font-size: 2rem;">Projects</h2>
+                <p style="font-size: 20px; text-align: left; color: #6B7280;">Some of my featured projects &nbsp;
+                <a 
+                 href="/projects.html">see all</a></p>
+            </div>   
+            <div class="row flex" style="margin-left: 1rem; margin-right: 1rem;">
+                <div class="card">
+                    <div class="proj-info">
+                        <h2>CLI Quiz-KnowMe</h2>
+                        <div class="tags">
+                            <ul>
+                                <li class="list-item-inline">Javascript</li>
+                                <li class="list-item-inline">readline-sync.js</li>
+                            </ul>
+                        </div>
+                        <p>A CLI hosted on repl.it. Asks a player 6 questions about me
+                            to test how well do they know me and marks them accordingly.</p>
                     </div>
-                  </div>
+                    <div class="btn">
+                        <a class="link link-primary" href="https://repl.it/@chanchal07/Knowme-Quiz?embed=1&output=1">Live Project</a>&nbsp;
+                        <a class="link link-secondary" href="https://repl.it/@chanchal07/Knowme-Quiz#index.js">Source code</a>  
+                    </div>
                 </div>
+                    
+                  
+                <div class="card">
+                    <div class="proj-info">
+                        <h2>CLI-The Ultimate Breaking Bad Quiz</h2>
+                        <div class="tags">
+                            <ul>
+                                <li class="list-item-inline">Javascript</li>
+                                <li class="list-item-inline">readline-sync.js</li>
+                                <li class="list-item-inline">chalk</li>
+                            </ul>
+                        </div>
+                        <p>A CLI hosted on repl.it. Asks a player 10 Questions and marks them accordingly.
+                        Uses chalk library to add styles to terminal and readline-sync to get input.</p>
+                    </div>
+                    <div class="btn">
+                        <a class="link link-primary" href="https://repl.it/@chanchal07/breaking-bad-quiz?embed=1&output=1">Live Project</a>&nbsp;
+                        <a class="link link-secondary" href="https://repl.it/@chanchal07/breaking-bad-quiz#index.js">Source code</a>  
+                    </div>
+                </div>    
+                
             </div>
         </div>
-
-        <!--<div class="project-list">
-            <div class="flex ">
-                <div class="proj-card">
-                    <h2>projname</h2>
-                    <div class="proj-image">
-                        <img src="">
-                    </div>
-                    <div class="proj-desc">
-                        <p>proj description</p>
-                    </div>
-                    <div class="card-footer">
-                        <button>live project</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>-->
-        
-        
+ 
     </section>
 
     <!-- Blogs -->
     <section class="section">
-        <div class="container container-center">
+        <div style="padding: 2rem;" class="container container-center">
             <h1>Blogs</h1>
-            <p>I am also working on some technical and non techincal blogs.
+            <p style="padding: 1rem;">I am also working on some technical and non techincal blogs.
                  I like to document my journey of learning.</p>
-            <a class="link link-secondary" href="/blogs.html">Browse</a>
+            <a style="margin-left: 9rem;" class="link link-secondary" href="/blogs.html">Browse</a>
         </div>   
     </section>
 
 
-    <!-- footer -->
+        <!-- footer -->
     <footer class="footer">
-        <div class="footer-header">header inside footer</div>
+        <span  style="float: left; font-weight: bold;
+        font-size: 25px; padding-top: 1.2rem;">
+            <a class="link" href="/">CHANCHAL</a>
+        </span>
         <div class="footer-social my--1">
-            <small class="text--muted">Reach out</small>
+            <div class="footer-header">connect with me</div>
             <ul class="social-links list-non-bullet">
-                <li class="">
-                    <a href="https://github.com/akshay-rajput" class="link" title="My Github Profile">
+                <li class="list-item-inline">
+                    <a href="https://github.com/chanchal16" class="link" title="My Github Profile">
                         <span class="fab fa-github"></span>
                     </a>
                 </li>
-                <li class="mx--1">
-                    <a href="https://www.linkedin.com/in/akshay-rajput/" class="link" title="My LinkedIn Profile">
+                <li class="list-item-inline">
+                    <a href="https://www.linkedin.com/in/rajput07/" class="link" title="My LinkedIn Profile">
                         <span class="fab fa-linkedin"></span>
                     </a>
                 </li>
-                <li class="">
-                    <a href="https://www.instagram.com/the.frontend.guy/" class="link" title="My Instagram">
+                <li class="list-item-inline">
+                    <a href="https://www.instagram.com/rajputchanchal07/" class="link" title="My Instagram">
                         <span class="fab fa-instagram"></span>
                     </a>
                 </li>
             </ul>
         </div>
-
-        <!--<ul class="social-links list-non-bullet">
-            <li class="list-item-inline">
-                <a class="link" href="/">socialone</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="/">socialtwo</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="/">socialthree</a>
-            </li> 
-        </ul>-->
-
+    
     </footer>
 </body>
 </html>
