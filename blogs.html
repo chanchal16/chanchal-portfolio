@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogs</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href="/style.css" rel="stylesheet"/>
 </head>
 <body>
     <!-- navigation bar -->
-    <nav class="navigation container">
-        <div class="nav-brand">CHANCHAL</div>
+    <nav class="navigation">
+        
         <ul class="list-non-bullet nav-pills">
+            <li style="float: left; font-weight: bold;
+            font-size: 1.5rem;">
+                <a class="link" href="/">CHANCHAL</a>
+            </li>
             <li class="list-item-inline ">
                 <a class="link" href="/">Home</a>
             </li>
@@ -27,77 +31,102 @@
         </ul>
     </nav>
 
-    <div class="container container-center">
-        <div class="row"> 
-            <div class="column">
-                <h2 style="font-size: 2rem;">Read my blogs</h2>
-              <div class="card">
-                <h2>dummy blog one</h2>
-                <small>November, 2020</small>
-                <p>The most well-known dummy text is the 'Lorem Ipsum', which is said to have
-                 originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language
-                which more or less corresponds to 'proper' Latin. It contains a series of real
-                 Latin words.</p>
-                <div class="btn">
-                    <a class="link link-primary" href="/blogs.html">Read more</a> 
-                </div>
-              </div>
-            </div>
-          
-            <div class="column">
-              <div class="card">
-                <h2>second dummy blog</h2>
-                <small>Janurary,2021</small>
-                <p>Dummy text: Its function as a filler or as a tool for comparing the visual
-                impression of different typefaces Dummy text is text that is used in the publishing
-                industry or by web designers to occupy the space which will later be filled with
-                'real' content. This is required when, for example, the final text is not yet
-                available. Dummy text is also known as 'fill text'.</p>
-                <div class="btn">
-                    <a class="link link-primary" href="/blogs.html">Read more</a> 
-                </div>
-              </div>
-            </div>
-     
+    <div class=" container container-center" style="padding: 2.5rem;">
+
+        <div style="text-align: center; padding-top: 25px;">
+            <h2 style="font-size: 2rem; color: #616875; margin-bottom: 10px;">Read my blogs</h2>
         </div>
-    
+
+        <div class="row flex">
+            <div class="blog-card" style="height:350px; margin-bottom: 2.5rem;">
+                <div class="blog-info">
+                    <h2>How multiple requests are handled by node.js</h2>
+                    <div class="tags">
+                        <small>March 22, 2021</small>
+                    </div>
+                    <div class="b-desc">
+                        <p>As we all know, In node.js we run JavaScript and JavaScript language
+                            don't have a concept of multiple threads then how do we achieve that? 
+                            I am going to tell you how node.js(single threaded) handles multiple requests.<br>
+                            When a client sends a request to the node server, the server further 
+                            sends that request to other server in the meantime, if there comes 
+                            another request then the client have to wait for some time(seconds). 
+                            Node.js is a single threaded application that is it can only accept 
+                            requests. Node.js can handle multiple requests but it will not wait for 
+                            other server to respond. Therefore single thread will not be blocked for single client.
+                            How it will do it?
+                            Node.js uses two concepts
+
+                            Non-blocking I/O
+                            Asynchronous
+                        </p>
+                    </div>
+                
+                    <div class="btn" style="margin-bottom: 25px;">
+                        <a class="link link-primary" href="#">Read more</a>&nbsp;
+                          
+                    </div>
+                </div>
+            </div>
+            
+          
+            <div class="blog-card" style="height: 350px; margin-bottom: 2.5rem;">
+                <div class="blog-info">
+                    <h2>Scope, Scope chain and Lexical Environment in JavaScript</h2>
+                    <div class="tags">
+                        <small>March 25, 2021</small>
+                    </div>
+                    <div class="b-desc flex">
+                        <p>Scope is the accessibility of variables, functions and objects in 
+                            some particular part of your code during runtime. In other words, scope 
+                            is where you can access a specific variable or function in our code.<br>
+                            <small style="font-style: italic; font-size: 18px;">Scope is directly 
+                                dependent on lexical environment.</small> <br>
+                                Lexical Environment<br>
+                                Whenever an execution context is created a lexical environment is 
+                                also created. Lexical environment is the local memory along with the 
+                                lexical environment of its parent. It means that in a group of nested functions,
+                                the inner function will have access to the memory space of its parent function.
+                        </p>
+                    </div>
+                </div>
+                <div class="btn" style="margin-bottom: 25px;">
+                    <a class="link link-primary" href="#">Read more</a>&nbsp;
+                      
+                </div>
+            </div>
+
+              
+        </div>
     </div>
 
     <!-- footer -->
     <footer class="footer">
-        <div class="footer-header">header inside footer</div>
+        <span  style="float: left; font-weight: bold;
+        font-size: 25px; padding-top: 1.2rem;">
+            <a class="link" href="/">CHANCHAL</a>
+        </span>
         <div class="footer-social my--1">
-            <small class="text--muted">Reach out</small>
+            <div class="footer-header">connect with me</div>
             <ul class="social-links list-non-bullet">
-                <li class="">
-                    <a href="https://github.com/akshay-rajput" class="link" title="My Github Profile">
+
+                <li class="list-item-inline">
+                    <a href="https://github.com/chanchal16" class="link" title="My Github Profile">
                         <span class="fab fa-github"></span>
                     </a>
                 </li>
-                <li class="mx--1">
-                    <a href="https://www.linkedin.com/in/akshay-rajput/" class="link" title="My LinkedIn Profile">
+                <li class="list-item-inline">
+                    <a href="https://www.linkedin.com/in/rajput07/" class="link" title="My LinkedIn Profile">
                         <span class="fab fa-linkedin"></span>
                     </a>
                 </li>
-                <li class="">
-                    <a href="https://www.instagram.com/the.frontend.guy/" class="link" title="My Instagram">
+                <li class="list-item-inline">
+                    <a href="https://www.instagram.com/rajputchanchal07/" class="link" title="My Instagram">
                         <span class="fab fa-instagram"></span>
                     </a>
                 </li>
             </ul>
         </div>
-
-        <!--<ul class="social-links list-non-bullet">
-            <li class="list-item-inline">
-                <a class="link" href="/">socialone</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="/">socialtwo</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="/">socialthree</a>
-            </li> 
-        </ul>-->
 
     </footer>
 </body>
