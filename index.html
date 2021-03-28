@@ -7,19 +7,19 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href="/style.css" rel="stylesheet"/>
+    <link href="/responsive.css" rel="stylesheet"/>
 </head>
 <body>
     <!-- navigation bar -->
     <nav class="navigation">
         
         <ul class="list-non-bullet nav-pills">
-            <li style="float: left; font-weight: bold;
-            font-size: 1.6rem;">
-                <a class="link" href="/">CHANCHAL</a>
+            <li class="nav-brand">
+                <a class="link" href="/">Chanchal</a>
             </li>
             
-            <li class="list-item-inline link-active">
-                <a class="link" href="/">Home</a>
+            <li class="list-item-inline">
+                <a id="page1" class="link" href="/">Home</a>
             </li>
 
             <li class="list-item-inline">
@@ -36,13 +36,11 @@
 
     <!-- header -->
     <header class="intro-header">
-        <img class="dev-img" src="/images/coder.svg">
+        <img class="dev-img" src="/images/code.svg">
         <div class="intro-heading">
             <h2>Hey there!</h2>
             <h1>I am <span class="name-highlight">Chanchal Rajput</span></h1>
-            <p>I am a front-end developer! <br>
-
-            I have worked on few CLI projects. I will showcase it here soon.</p>
+            <p>I am a front-end developer! <br></p>
         </div>
         
     </header>
@@ -91,49 +89,50 @@
     <section class="section ow" style="padding: 1rem;">
         <div class="container container-center" >
             <div class="proj">
-                <h2 style="font-size: 2rem;">Projects</h2>
+                <h2 style="font-size: 2rem; color: #1B2631;">Projects</h2>
                 <p style="font-size: 20px; text-align: left; color: #6B7280;">Some of my featured projects &nbsp;
-                <a 
+                <a class="phover"
                  href="/projects.html">see all</a></p>
             </div>   
-            <div class="row" style="margin-left: 1rem; margin-right: 1rem;">
+            <div class="row" >
                 <div class="card">
                     <div class="proj-info">
-                        <h2>CLI Quiz-KnowMe</h2>
+                        <h2>Songs Recommender</h2>
                         <div class="tags">
                             <ul>
-                                <li class="list-item-inline">Javascript</li>
-                                <li class="list-item-inline">readline-sync.js</li>
+                                <li class="list-item-inline">Basic-React.js</li>
+                                <li class="list-item-inline">JSX</li>
+                                <li class="list-item-inline">CSS</li>
                             </ul>
                         </div>
-                        <p>A CLI hosted on repl.it. Asks a player 6 questions about me
-                            to test how well do they know me and marks them accordingly.</p>
+                        <p>App that recommends the user my favourite songs depending on the genre selected.
+                            It is made in React and uses JSX. It's deployed on CodeSandBox.</p>
                     </div>
-                    <div class="btn">
-                        <a class="link link-primary" href="https://repl.it/@chanchal07/Knowme-Quiz?embed=1&output=1">Live Project</a>&nbsp;
-                        <a class="link link-secondary" href="https://repl.it/@chanchal07/Knowme-Quiz#index.js">Source code</a>  
-                    </div>
+                        <div class="btn">
+                            <a class="link link-primary" href="https://s7vpu.csb.app/">Live Project</a>&nbsp;
+                            <a class="link link-secondary" href="https://github.com/chanchal16/Neog-Recommender">Source code</a>  
+                        </div>
                 </div>
                     
                   
                 <div class="card">
                     <div class="proj-info">
-                        <h2>CLI-The Ultimate Breaking Bad Quiz</h2>
+                        <h2>Minion Translator</h2>
                         <div class="tags">
                             <ul>
-                                <li class="list-item-inline">Javascript</li>
-                                <li class="list-item-inline">readline-sync.js</li>
-                                <li class="list-item-inline">chalk</li>
+                                <li class="list-item-inline tbg">Javascript</li>
+                                <li class="list-item-inline tbg">Funtranslations API</li>
+                                <li class="list-item-inline tbg">CSS</li>
                             </ul>
                         </div>
-                        <p>A CLI hosted on repl.it. Asks a player 10 Questions and marks them accordingly.
-                        Uses chalk library to add styles to terminal and readline-sync to get input.</p>
+                        <p>Translate your sentences into Banana language with this web app. Fetches translations
+                            from an API.</p>
                     </div>
-                    <div class="btn">
-                        <a class="link link-primary" href="https://repl.it/@chanchal07/breaking-bad-quiz?embed=1&output=1">Live Project</a>&nbsp;
-                        <a class="link link-secondary" href="https://repl.it/@chanchal07/breaking-bad-quiz#index.js">Source code</a>  
-                    </div>
-                </div>    
+                        <div class="btn">
+                            <a class="link link-primary" href="https://minion-speak.netlify.app/">Live Project</a>&nbsp;
+                            <a class="link link-secondary" href="https://github.com/chanchal16/Minion-Translator">Source code</a>  
+                        </div>
+                </div>   
                 
             </div>
         </div>
@@ -141,12 +140,10 @@
     </section>
 
     <!-- Blogs -->
-    <section class="section">
-        <div style="padding: 2rem;" class="container container-center">
+        <div style="padding: 2rem;" class="container container-center b-container">
             <h1>Blogs</h1>
             <p style="padding: 1rem;">I am also working on some technical and non techincal blogs.
                  I like to document my journey of learning.</p>
-            <a style="margin-left: 9rem;" class="link link-secondary" href="/blogs.html">Browse</a>
 
             <div class="flex">
                 <div class="blog-card">
@@ -192,14 +189,13 @@
             </div>
            
         </div>   
-    </section>
 
 
         <!-- footer -->
     <footer class="footer">
-        <span  style="float: left; font-weight: bold;
+        <span style="float: left; font-weight: bold;
         font-size: 25px; padding-top: 1.2rem;">
-            <a class="link" href="/">CHANCHAL</a>
+            <a class="link" href="/">Chanchal</a>
         </span>
         <div class="footer-social my--1">
             <div class="footer-header">connect with me</div>
