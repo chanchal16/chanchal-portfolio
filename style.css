@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 *,::before,::after{
     padding: 0;
     margin: 0;
@@ -13,15 +10,18 @@
 /*****css variable*****/
 :root{
      /* --primary-color:#EC4899;   */
-      --primary-color:#06B6D4;  
-      /* --primary-color:#D946EF;   */
+    --primary-color:#b71a3b;  
+    --dark:#7e0f12;
+    --peach:#f79970;
+    --light:#ffbf66;
+    --green:#6a7045;
     --gray:#6B7280;
-    --dark-grey:#616875;
-    --off-white:#FAFAFA; 
-    /* --off-white:#FAFAFA; */
+    --dark-grey:#1B2631;
+    --off-white:#fdfaf9; 
+    
 }
 body{
-    font-family: 'Crimson Text', serif; 
+    font-family: 'Source Sans Pro', sans-serif; 
     margin: 0px;
 }
 
@@ -35,11 +35,16 @@ span{
 
 /* navigation */
 .navigation{
-    background-color: var(--primary-color);
-    font-family: 'Akaya Telivigala', cursive;
-    color: white;
+    background-color: var(--dark);
+    font-family: 'Oleo Script', cursive;
+    /* color: #dafaf3; */
     padding: 1.5rem;
-    border-bottom-left-radius: 1rem;
+    /* border-bottom-left-radius: 1rem; */
+}
+.nav-brand{
+    float: left; 
+    font-weight: bold;
+    font-size: 1.8rem;
 }
 .navigation .nav-pills{
     text-align: right;
@@ -47,21 +52,31 @@ span{
 }
 
 .navigation .link{
-    color: white;
+    color: var(--peach);
+    position: relative;
     /*float: right;*/
 }
-.navigation .link-active{
-    font-weight: bold  ;
-    border-bottom: 3px solid white;
-    border-width: 10%;
-    border-radius: 50%;
-    
+.link:hover{
+    color:var(--light);
 }
+/***active link***/
+#page1, #page2, #page3{
+    color: var(--light) !important; 
+    font-weight: bold;
+    /* border-bottom: 3px solid var(--light); */
+      
+}
+.link-active:hover{
+    color: white;
+}
+
 
 /************ header ***********/
 .intro-header{
     padding: 5rem;
-    background-color: #F0F9FF;
+     /* background-color: #F5FCFC;    */
+    background-color: var(--dark);   
+    
     flex-grow: 1;
 }
 .intro-header .dev-img{
@@ -70,13 +85,16 @@ span{
     float: right;
     display: block;
 }
+
+
 .intro-heading{
     text-align: center;
     font-size: 1.2rem;
     padding-top: 1rem;
     text-align: justify;
-    color: var(--gray);
-    font-family: 'Abhaya Libre', serif; 
+     /* color: var(--gray);   */
+    color: white;  
+    /* font-family: 'Lobster', cursive;  */
 }
 
 .intro-heading p{
@@ -85,7 +103,8 @@ span{
     font-size: 1.5rem;
 }
 .name-highlight{
-    color: #0891B2;
+    color: #ffbf66; 
+    /* color: var(--dark); */
 }
 
 /*************container***********/
@@ -96,6 +115,7 @@ span{
 .container h1{
     font-size: 2rem;
     text-align: center;
+    color: var(--dark-grey);
 }
 .container-center{
     /* max-width: 950px;  */
@@ -123,11 +143,19 @@ span{
 .tech-logo img{
     height: 80px;
     display: block;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.tech-logo img:hover{
+    height: 95px;
 }
 .text-center{
     text-align: center;
     text-decoration: none;
     color: var(--gray);
+}
+.text-center:hover{
+    color: var(--dark);
 }
 
 /*********** projects **************/
@@ -144,33 +172,33 @@ span{
     margin:1rem 11rem;
 }
 .proj a{
-    padding: 3px 8px;
     text-decoration: none;
     float: right; 
-    background-color: #EC4899; 
-    color: white; 
-    border-radius: 10px;
+    color: var(--primary-color); 
+    border-bottom: 2px solid var(--primary-color);
     
 }
 
 /* Style the counter cards */
 .card{
     max-width: 70vh;   
-   
-    /* max-width: 400px; */
     position: relative; 
     padding: 0px 15px;
     min-height: 240px; 
-    border: 1px solid gray;
+    border: 1px solid #ccc;
     margin: 0.8rem 1rem;
     text-align: justify;
     overflow: hidden;
-    
 
 }
 
 .card:hover,.blog-card:hover{
-    border: 1.3px solid var(--primary-color);
+    border: 1.32px solid var(--primary-color);
+}
+
+.phover:hover{
+    color: #eca33c;
+    border-bottom: 2px solid #eca33c;
 }
 
 .proj-info,.blog-info{
@@ -181,26 +209,32 @@ span{
 }
 
 .tags{
+    width: fit-content;
     text-align: justify;
-    background-color: var(--off-white);
-    color: var(--primary-color);
-    margin-top: 8px;
+    background-color: #fdf3f5;
+    padding: 2px;
+    /* color: var(--primary-color); */
+    color: var(--dark);
+    margin-top: 12px;
 }
 
 .prj-desc,.b-desc,.blog-desc{
     position: relative;
     flex-grow: 1;
+    text-align: justify;
     /* flex-shrink: 1; */
 }
 
 .proj-info h2, .blog-info h2{
     color: var(--dark-grey);
     overflow: hidden;
+    font-size: 1.4rem;
 }
 .proj-info p, .blog-info p{
     text-align: justify;
     font-size: 18px;
     padding-top: 20px;
+    word-wrap: break-word;
     
 }
 
@@ -213,12 +247,12 @@ span{
 
 /**************blogs**********/
 .blog-card{
-    max-width: 70%;
+    max-width: 74%;
     /* height: auto; */
-    margin: 2rem;
+    margin: 1rem;
     position: relative; 
     padding: 0px 15px;
-    height: 230px;  
+    min-height: 230px; 
     border: 1px solid gray;  
     text-align: justify;
     overflow: hidden;
@@ -245,78 +279,6 @@ span{
 }
 
 
-/* Responsive columns - one column layout (vertical) on small screens */
-
-@media (max-width:440px){
-    html{
-        font-size: 15px;
-    }
-   
-    .techlist img{
-        width: 40px;
-    }
-    .intro-header .dev-img{
-        display: none;
-    }
-    
-    
-}
-@media screen and (max-width: 767px) {
-    .intro-header .dev-img{
-        /* max-width: 200px; */
-        display: none;
-        float: right;
-    }
-
-    .proj{
-        margin: auto;
-    }
-    
-    .row{
-        display: flex;
-        flex-direction: column;
-    }
-    .card {
-      min-width: 300px;
-      min-height: 300px;
-      
-    }
-   
-    
-    .btn{
-        /* position:relative; */
-        bottom: 0;
-        margin-top: 1rem;
-    }
-  
-  
-
-    
-}
-
-/* tablets */
-@media(min-width: 768px) and (max-width: 992px){
-    .intro-header.dev-img{
-        max-width: 30%; 
-        display: block;
-        float: right;
-    }
-    .intro-heading h1{
-        font-size: 1.5rem;
-    }
-    .intro-heading p{
-        font-size: 1rem;
-    }
-    .blog-card{
-        min-width: 70%;
-        flex-grow: 1;    
-    }
-}
-
-hr{
-    margin: 2rem 0rem;
-}
-
 /**links**/
 .link{
     text-decoration: none;
@@ -327,9 +289,22 @@ hr{
     color: white;
     border-radius: 0.5rem;
 }
-.link-secondary{
+ .link-primary:hover{
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
+    border-radius: 0.5rem;
+    background-color: var(--light);
+}
+.link-secondary{
+    color: #e5a043;
+    border: 1.5px solid #e5a043;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+
+.link-secondary:hover{
+    color: var(--primary-color);
+    border: 1.5px solid var(--primary-color);
     border-radius: 0.5rem;
 }
 
@@ -341,9 +316,6 @@ hr{
     display: inline;
     padding: 0rem 0.2rem;
 }
-
-
-
 
 
 /* section */
@@ -366,11 +338,11 @@ button{
 .footer{
     background-color: var(--primary-color);
     padding: 20px ;
-    font-family: 'Akaya Telivigala', cursive; 
+    font-family: 'Oleo Script', cursive;
     /* text-align: center; */
-    color: white;
-    margin-top: 18px;
-    border-top-right-radius: 1rem;
+    color: var(--peach);
+    margin-top: 4rem;
+    
 }
 .footer-header{
     text-align: right;
@@ -379,8 +351,11 @@ button{
     font-size: 18px;
 }
 .footer .link{
-    color: white;
+    color: var(--peach);
     /* font-size: 1rem; */
+}
+.footer .link:hover{
+    color: var(--light);
 }
 
 .social-links{

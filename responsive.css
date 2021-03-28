@@ -1,0 +1,211 @@
+/* Responsive columns - one column layout (vertical) on small screens */
+
+@media (max-width:440px){
+    html{
+        font-size: 15px;
+    }
+   
+    .list-item-inline{
+        font-size: 13px;
+        padding: 0;  
+    }
+   
+    .techlist img{
+        width: 40px;
+        margin: auto;
+    }
+    .intro-header .dev-img{
+        display: none;
+    }
+
+    .row{
+        padding: 0;
+        gap: 25px;
+        margin-top: 1rem;
+    }
+    .card{
+        margin: auto;   
+    }
+    
+    .footer-header{
+        font-size: smaller;
+    }
+    .fab{
+        font-size: 20px;
+    }
+   
+    
+    
+}
+@media screen and (max-width: 767px) {
+    .intro-header .dev-img{
+        /* max-width: 200px; */
+        display: none;
+        float: right;
+    }
+
+    .proj{
+        margin: auto;
+    }
+    
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+      min-width: 300px; 
+      min-height: 260px;   
+      
+    }
+    
+
+    .b-container{
+        padding: 0;
+    }
+    
+    .blog-card{
+        min-width: 300px;
+        min-height: 300px;
+    }
+    .blog-info h2{
+        font-size: 1.2rem;
+    }
+    .blog-desc p,small{
+        font-size: 1rem !important; 
+    }
+    .b-desc p,small{
+        font-size: 0.65rem !important;
+    }
+   
+    
+    .btn{
+        /* position:relative; */
+        bottom: 0;
+        margin-top: 1rem;
+    }
+    
+}
+
+@media(min-width:320px) and (max-width:375px){
+    .nav-brand{
+        font-size:larger;
+    }
+    .list-item-inline{
+        font-size: 12px;
+        padding: 0;  
+    }
+    .proj p{
+        font-size: 15px  !important;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 25px;
+        margin-top: 1rem;
+    }
+    .card{
+        margin: auto;   
+    }
+}
+@media(width:320px){
+    .nav-brand{
+        font-size: medium;    
+    }
+    
+    .list-item-inline{
+        font-size: 12.5px !important;
+        padding: 0;  
+    }
+    .proj{
+        margin: 0;
+    }
+    .proj p{
+        font-size: 15px  !important;
+    }
+    .card{
+        /* margin-right: 25px; */
+        min-width: 62px;
+        min-height: 280px;
+    }
+}
+
+@media(width:280px){
+    .nav-brand{
+        font-size: 18.5px;    
+    }
+    .techlist{
+        margin: auto;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+         min-width: 80px; 
+         height: 280px;     
+    }
+    .blog-card{
+        min-width: 40vh;
+        height: 52vh;
+    }
+    
+    .link{
+        padding: 7px ;
+    }
+    .footer-header{
+        font-size: 12px;
+        margin-right: 2rem;
+    }
+    .fab{
+        font-size: 20px;
+    }
+}
+
+/* tablets */
+@media(min-width: 768px) and (max-width: 992px){
+    .intro-header.dev-img{
+        max-width: 30%; 
+        display: block;
+        float: right;
+    }
+    .intro-heading h1{
+        font-size: 1.5rem;
+    }
+    .intro-heading p{
+        font-size: 1rem;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: row;
+    }
+    .card{
+        max-width: 31vh;
+        height: 28vh; 
+    }
+    .blog-card{
+        max-width: 80%;
+        min-height: 30vh;
+        /* flex-grow: 3;     */
+    }
+
+    .b-desc p,small{
+        font-size: 0.8rem !important;
+    }
+}
+
+@media(width:1024px){
+    .row{
+        display: flex;
+        flex-direction: row;
+    }
+    .card{
+        max-width: 31vh;
+        height: auto; 
+    }
+    .blog-card{
+        min-width: 70%;
+        min-height: 20vh;
+    }
+}
