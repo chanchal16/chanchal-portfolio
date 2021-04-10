@@ -73,7 +73,7 @@ span{
 
 /************ header ***********/
 .intro-header{
-    padding: 5rem;
+    padding: 5.5rem 5rem;
      /* background-color: #F5FCFC;    */
     background-color: var(--dark);   
     
@@ -138,16 +138,17 @@ span{
 .techlist{
     justify-content: space-around;
     padding: 1rem ;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 .tech-logo img{
     height: 80px;
     display: block;
-    -webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+    overflow: hidden;
+	transition:  0.3s ease-in-out;
 }
 .tech-logo img:hover{
     height: 95px;
+    transform: scale(1);
 }
 .text-center{
     text-align: center;
