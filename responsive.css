@@ -63,14 +63,14 @@
         padding: 0;
     }
     
-    .blog-card{
+    .blog-card, .proj-card{
         min-width: 300px;
         min-height: 300px;
     }
-    .blog-info h2{
+    .blog-info h2, .proj-card h2{
         font-size: 1.2rem;
     }
-    .blog-desc p,small{
+    .blog-desc p,small,.proj-card p{
         font-size: 1rem !important; 
     }
     .b-desc p,small{
@@ -184,7 +184,7 @@
         max-width: 31vh;
         height: 28vh; 
     }
-    .blog-card{
+    .blog-card,.proj-card{
         max-width: 80%;
         min-height: 30vh;
         /* flex-grow: 3;     */

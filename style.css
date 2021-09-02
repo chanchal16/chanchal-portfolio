@@ -193,7 +193,7 @@ span{
 
 }
 
-.card:hover,.blog-card:hover{
+.card:hover, .proj-card:hover,.blog-card:hover{
     border: 1.32px solid var(--primary-color);
 }
 
@@ -247,7 +247,7 @@ span{
 }
 
 /**************blogs**********/
-.blog-card{
+.blog-card, .proj-card{
     max-width: 74%;
     /* height: auto; */
     margin: 1rem;
