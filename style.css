@@ -179,6 +179,14 @@ span{
     border-bottom: 2px solid var(--primary-color);
     
 }
+/* .proj-images{
+    width: 74%;
+
+} */
+.proj-images img{
+    /* object-fit: contain; */
+    width: 100%;
+}
 
 /* Style the counter cards */
 .card{
@@ -207,6 +215,7 @@ span{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+    padding: 0px 15px
 }
 
 .tags{
@@ -240,10 +249,12 @@ span{
 }
 
 .btn{
-    position: absolute;
-    bottom: 0;
+    margin: 20px 0;
+    padding: 0 15px;
+    /* position: absolute;
+    bottom: 0; */
     /* padding-top: 15px; */
-    margin-bottom: 18px;
+    /* margin-bottom: 18px; */
 }
 
 /**************blogs**********/
@@ -252,7 +263,7 @@ span{
     /* height: auto; */
     margin: 1rem;
     position: relative; 
-    padding: 0px 15px;
+    /* padding: 0px 15px; */
     min-height: 230px; 
     border: 1px solid gray;  
     text-align: justify;
