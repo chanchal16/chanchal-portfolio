@@ -164,7 +164,7 @@ span{
 .row{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
 }
@@ -179,10 +179,9 @@ span{
     border-bottom: 2px solid var(--primary-color);
     
 }
-/* .proj-images{
-    width: 74%;
-
-} */
+#cardId1,#cardId2{
+    height: 612px ;
+}
 .proj-images img{
     /* object-fit: contain; */
     width: 100%;
@@ -247,12 +246,14 @@ span{
     word-wrap: break-word;
     
 }
-
+.action-btns{
+    position: absolute;
+    bottom: 0; 
+}
 .btn{
     margin: 20px 0;
     padding: 0 15px;
-    /* position: absolute;
-    bottom: 0; */
+    
     /* padding-top: 15px; */
     /* margin-bottom: 18px; */
 }
@@ -260,7 +261,6 @@ span{
 /**************blogs**********/
 .blog-card, .proj-card{
     max-width: 74%;
-    /* height: auto; */
     margin: 1rem;
     position: relative; 
     /* padding: 0px 15px; */
