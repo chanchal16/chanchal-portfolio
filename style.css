@@ -136,19 +136,20 @@ span{
     align-items: center;
 }
 .techlist{
-    justify-content: space-around;
-    padding: 1rem ;
-    margin: 2rem 0;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(5,1fr);
+    /* justify-content: space-around;
+    padding: 1rem ;*/
+    margin: 2rem 0; 
 }
 .tech-logo img{
     height: 80px;
-    display: block;
     overflow: hidden;
 	transition:  0.3s ease-in-out;
 }
 .tech-logo img:hover{
-    height: 95px;
-    transform: scale(1);
+    transform: scale(1.2);
 }
 .text-center{
     text-align: center;
@@ -160,6 +161,9 @@ span{
 }
 
 /*********** projects **************/
+.projects{
+    margin: 0 1rem;
+}
 
 .row{
     display: flex;
@@ -170,7 +174,7 @@ span{
 }
 
 .proj{
-    margin:1rem 11rem;
+    margin:1rem 2rem;
 }
 .proj a{
     text-decoration: none;
