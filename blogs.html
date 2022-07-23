@@ -37,31 +37,62 @@
             <h2 style="font-size: 2rem; color: #1B2631; margin-bottom: 10px;">Read my blogs</h2>
         </div>
 
-        <div class="flex">   
-          
+        <div class="flex"> 
+              <!--1st blog  -->
             <div class="blog-card" style="height: 350px; margin-bottom: 2.5rem;">
                 <div class="blog-info">
-                    <h2>Scope, Scope chain and Lexical Environment in JavaScript</h2>
+                    <h2>Promise.all() Vs Promise.allSettled() in JS</h2>
                     <div class="tags">
-                        <small>March 25, 2021</small>
+                        <small>May 28, 2022</small>
                     </div>
                     <div class="b-desc flex">
-                        <p>Scope is the accessibility of variables, functions and objects in 
-                            some particular part of your code during runtime. In other words, scope 
-                            is where you can access a specific variable or function in our code.<br>
-                            <small style="font-style: italic; font-size: 18px;">Scope is directly 
-                                dependent on lexical environment.</small> <br>
-                                Lexical Environment<br>
-                                Whenever an execution context is created a lexical environment is 
-                                also created. Lexical environment is the local memory along with the 
-                                lexical environment of its parent. It means that in a group of nested functions,
-                                the inner function will have access to the memory space of its parent function.
+                        <p>As a developer once in a while in your javascript journey 
+                        you may have got confused between the promise methods. Today 
+                        in this article, I am going to walk you through promise.all() 
+                        and promise.allSettled() methods of promises.
+                        Familiarity with promises and it's resolve, reject methods and async js
+                        If you are not familiar with the promise constructor please read it on MDN
+                        Let's get started with the two promises methods and explore their differences.
+                            <br/>
+                        <strong>1. Promise.all()</strong><br/>
+                        It takes an iterable(array) of promises and returns a single promise. 
+                        The returned promise will resolve when all of the input's promises get 
+                        resolved.
                         </p>
                     </div>
                 </div>
                 <div class="btn" style="margin-bottom: 25px;">
                     <a class="link link-primary" target="_blank"
-                    href="https://chanchal16.hashnode.dev/scope-scope-chain-and-lexical-environment-in-javascript">
+                    href="https://chanchal16.hashnode.dev/promiseall-vs-promiseallsettled-in-js">
+                        Full Post &nbsp;<i class="fas fa-eye"></i>
+                    </a>&nbsp;
+                      
+                </div>
+            </div>
+          
+            <div class="blog-card" style="height: 350px; margin-bottom: 2.5rem;">
+                <div class="blog-info">
+                    <h2>Vite: The New Frontend Build Tool</h2>
+                    <div class="tags">
+                        <small>May 25, 2021</small>
+                    </div>
+                    <div class="b-desc flex">
+                        <p>In this article, you will learn how simple it is to setup your 
+                        application with Vite. You will also learn how fast Vite is, how 
+                        to use it with react, and how much it gets out of your way when you
+                         are using it.<br/>
+                        <strong>What is Vite or Vitejs?</strong><br/> 
+                         Vite is a lightning-fast, frontend build tool that aims to improve development experience for modern web projects.                        
+                         Vite includes two major parts - <br/>
+                        1. A Dev Server that provides rich feature strengthening over ES native support<br/>
+
+                        2. A build command based on rollup.js that bundles your code and offers highly
+                        </p>
+                    </div>
+                </div>
+                <div class="btn" style="margin-bottom: 25px;">
+                    <a class="link link-primary" target="_blank"
+                    href="https://chanchal16.hashnode.dev/vite-the-new-frontend-build-tool">
                         Full Post &nbsp;<i class="fas fa-eye"></i>
                     </a>&nbsp;
                       
@@ -76,14 +107,14 @@
                     </div>
                     <div class="b-desc">
                         <p>In this article I am going to walk you through Closures one of the important concept in 
-                            JavaScript. By the end of this article you will get an idea about closures.
-                            What is closure?
+                            JavaScript. By the end of this article you will get an idea about closures. <br/>
+                            <strong>What is closure?</strong><br/>
                             A function along with its lexical scope bundled together forms a closure. 
                             In simple words a closure gives you access to an outer function's scope from an inner function.<br>
                             
                             Let's understand this with an example. Let's understand the above code snippet
                             We have an outer function x() which creates a global scope for everything which resides inside it.    
-                            Function x() contains an inner function y() which creates its local scope within its global scope.                                                    
+                            Function x() contains an inner function y() which creates its local scope                                                    
                         </p>
                     </div>
                 
